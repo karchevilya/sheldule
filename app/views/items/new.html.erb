@@ -1,0 +1,38 @@
+<h2>Create new item</h2>
+
+<%= form_tag items_path, method: :post do %>
+  <%= label_tag :day%>
+  <%= text_field_tag :day%>
+  <ul>
+    <li>
+      <%= label_tag :number%>
+      <%= text_field_tag :number%>
+    </li>
+    <li>
+      <%= label_tag :st1%>
+      <%= text_field_tag :st1%>
+    </li>
+    <li>
+      <%= label_tag :st2%>
+      <%= text_field_tag :st2%>
+    </li>
+    <li>
+      <%= label_tag :st3%>
+      <%= text_field_tag :st3%>
+    </li>
+    <li>
+      <%= label_tag :st4%>
+      <%= text_field_tag :st4%>
+    </li>
+    <li>
+      <%= label_tag :st5%>
+      <%= text_field_tag :st5%>
+    </li>
+    <li>
+      <%= label_tag :st6%>
+      <%= text_field_tag :st6%>
+    </li>
+  </ul>
+
+  <%= submit_tag "Save", class: "btn btn-large btn-primary" %>
+<% end %>

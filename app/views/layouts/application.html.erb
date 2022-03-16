@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LessonsShedule</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <!-- devise -->
+      <%= render 'include/auth/auth_header' %>
+    <!-- devise -->
+
+    <div class="jumbotron vertical-center">
+        <%= render 'include/main/notification' %>
+        <%= yield %>
+    </div>
+  </body>
+</html>
