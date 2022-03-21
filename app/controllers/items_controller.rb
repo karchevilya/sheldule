@@ -75,4 +75,3 @@ class ItemsController < ApplicationController
     # render_403 unless params[:admin]
   end
 end
-  
