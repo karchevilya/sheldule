@@ -32,7 +32,3 @@ jobs:
           yarn install
       - name: Rubocop
         run: bundle exec rubocop
-      - name: RSpec
-        run: |
-          bundle exec rake db:create
-          bundle exec rspec
